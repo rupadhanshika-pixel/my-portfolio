@@ -57,7 +57,7 @@ button, a {
   color: #a78bfa;
 }
 .hero h1 {
-  color: #f5f5fa;
+  color: #f5f3ff;
 }
 
 .nav-links {
@@ -114,8 +114,8 @@ footer a:hover {
 }
 
 .intro {
-  text-align: left;
-  margin-left: 0;
+  text-align: center;
+  margin-left: auto;
   margin-right: auto;
 }
 .actions {
@@ -310,3 +310,146 @@ footer .logo {
     flex-wrap: wrap;
   }
 }
+/* Fix dark Programmer Analyst heading */
+#about h1,
+#about h2,
+#about h1 span,
+#about h2 span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.45);
+}
+
+/* Highlight Analyst in purple */
+#about h1 span,
+#about h2 span {
+  color: #a78bfa !important;
+}
+
+/* Make About paragraph clear */
+#about p {
+  color: #f5f3ff !important;
+  opacity: 1 !important;
+  line-height: 1.8;
+}
+/* Improve Selected Work and Technical Skills visibility */
+#projects,
+#skills {
+  padding: 80px 6%;
+  color: #f8fafc;
+}
+
+/* Section headings */
+#projects h2,
+#skills h2,
+#projects h3,
+#skills h3 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.35);
+}
+
+/* Project and skill cards */
+#projects .project-card,
+#skills .skill-card,
+#projects .project,
+#skills .skill-category {
+  background: rgba(30, 35, 65, 0.9);
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+/* Make descriptions and skill names readable */
+#projects p,
+#skills p,
+#projects li,
+#skills li,
+#projects span,
+#skills span {
+  color: #e2e8f0 !important;
+  opacity: 1 !important;
+  line-height: 1.8;
+}
+
+/* Highlight technology names */
+#skills li,
+#skills span {
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.2);
+}
+
+/* Center the Contact section */
+#contact {
+  text-align: center;
+}
+
+#contact h2,
+#contact h3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact p {
+  max-width: 720px;
+  margin: 24px auto;
+  text-align: center;
+  color: #e2e8f0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+#contact .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* Make all contact buttons consistent */
+/*#contact .actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}*/
+
+/*#contact .actions a:not(.primary-btn) {
+  color: #ffffff;
+  border: 1px solid #a78bfa;
+  background: #302653;
+}
+
+#contact .actions a:not(.primary-btn):hover {
+  background: #a78bfa;
+  color: #111827;
+  transform: translateY(-3px);
+}*/
+
+/* Same purple style for all contact buttons */
+#contact .actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #302653;
+  border: 1px solid #a78bfa;
+  transition: all 0.25s ease;
+}
+
+#contact .actions a:hover {
+  background: #a78bfa;
+  color: #111827;
+  transform: translateY(-3px);
+}
+
